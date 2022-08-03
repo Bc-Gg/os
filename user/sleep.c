@@ -3,11 +3,11 @@
 # include"user/user.h"
 
 int 
-main(int argv, char * argc []){
+main(int argc, char * argv []){
     if (argc <= 1){
         fprintf(2, "usage : sleep <second>");
         exit(1);
     }
-    sleep(atoi(argc[1]));
+    sleep(atoi(argv[1]));
     exit(0);
 }
